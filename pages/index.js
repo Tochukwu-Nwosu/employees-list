@@ -12,11 +12,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Home Page</h1>
+        <h1>Home</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut earum quam adipisci eaque fugit necessitatibus quaerat temporibus similique voluptates illo doloribus, possimus vero id odit quia blanditiis incidunt cum alias doloremque a asperiores aperiam. Quaerat laudantium optio saepe soluta nihil ratione odio, corrupti consequatur ullam adipisci exercitationem minus ad.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut earum quam adipisci eaque fugit necessitatibus quaerat temporibus similique voluptates illo doloribus, possimus vero id odit quia blanditiis incidunt cum alias doloremque a asperiores aperiam. Quaerat laudantium optio saepe soluta nihil ratione odio, corrupti consequatur ullam adipisci exercitationem minus ad.</p>
       </main>
-
     </>
   )
 }
