@@ -1,9 +1,11 @@
+import Link from "next/link";
+
 const Navbar = () => {
     return (
         <nav>
             <p>EPL Clubs</p>
-            <a>Home</a>
-            <a>About</a>
+            <Link href={'/'}>Home</Link>
+            <Link href={'/about'}>About</Link>
         </nav>
     );
 }
