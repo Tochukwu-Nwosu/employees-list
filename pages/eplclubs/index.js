@@ -25,7 +25,7 @@ const Clubs = ({ employees }) => {
                     {employees.map(employee => {
                         return (
                             <div key={employee.id}>
-                                <Link href={'/'}>{employee.name}</Link>
+                                <Link href={'/' + employee.id}>{employee.name}</Link>
                             </div>
                         )
                     })}
