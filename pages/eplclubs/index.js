@@ -1,6 +1,19 @@
 import Head from "next/head";
+import Link from "next/link";
 
-const Clubs = () => {
+export const getStaticProps = async () => {
+
+    const res = await fetch('https://jsonplaceholder.typicode.com/users')
+    const data = await res.json()
+
+    return {
+        props: {
+            employees: data
+        }
+    }
+}
+
+const Clubs = ({ employees }) => {
     return ( 
         <>
             <Head>
@@ -8,6 +21,15 @@ const Clubs = () => {
             </Head>
             <main>
                 <h1>Epl Clubs</h1>
+                <ul>
+                    {employees.map(employee => {
+                        return (
+                            <div key={employee.id}>
+                                <Link href={'/'}>{employee.name}</Link>
+                            </div>
+                        )
+                    })}
+                </ul>
             </main>
         </>
     );
