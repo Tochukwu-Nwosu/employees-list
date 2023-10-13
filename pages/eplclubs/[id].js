@@ -28,12 +28,12 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ employee }) => {
     return (
-        <main>
+        <div>
             <h1>Employee Details</h1>
             <h2>{employee.name}</h2>
             <p>{employee.email}</p>
             <p>{employee.phone}</p>
-        </main>
+        </div>
     );
 }
  

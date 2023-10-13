@@ -16,9 +16,9 @@ const NotFound = () => {
             <Head>
                 <title>Epl Clubs - Page Not Found</title>
             </Head>
-            <main>
+            <div>
                 <h1>Ooops.........page not found!</h1>
-            </main>
+            </div>
         </>
     );
 }

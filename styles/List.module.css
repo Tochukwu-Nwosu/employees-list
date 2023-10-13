@@ -1,0 +1,9 @@
+.list {
+    margin: 5px 0;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    border-left: 2px solid #ffffff;
+}
+.list:hover {
+    border-left: 2px solid #2222ff;
+}

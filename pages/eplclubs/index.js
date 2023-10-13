@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import style from "@/styles/List.module.css"
 
 export const getStaticProps = async () => {
 
@@ -19,18 +20,18 @@ const Clubs = ({ employees }) => {
             <Head>
                 <title>Epl Clubs - List</title>
             </Head>
-            <main>
+            <div>
                 <h1>Epl Clubs</h1>
                 <ul>
                     {employees.map(employee => {
                         return (
-                            <div key={employee.id}>
+                            <div key={employee.id} className={style.list}>
                                 <Link href={'/eplclubs/' + employee.id}>{employee.name}</Link>
                             </div>
                         )
                     })}
                 </ul>
-            </main>
+            </div>
         </>
     );
 }

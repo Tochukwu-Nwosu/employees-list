@@ -1,6 +1,6 @@
 const Footer = () => {
     return (
-        <footer className="footer">
+        <footer>
             <p>Copyright EPL Clubs 2023</p>
         </footer>
     );
