@@ -1,7 +1,12 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 
 export default function Home() {
+
+  const router = useRouter()
+
   return (
     <>
       <Head>
@@ -15,6 +20,7 @@ export default function Home() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut earum quam adipisci eaque fugit necessitatibus quaerat temporibus similique voluptates illo doloribus, possimus vero id odit quia blanditiis incidunt cum alias doloremque a asperiores aperiam. Quaerat laudantium optio saepe soluta nihil ratione odio, corrupti consequatur ullam adipisci exercitationem minus ad.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde aut earum quam adipisci eaque fugit necessitatibus quaerat temporibus similique voluptates illo doloribus, possimus vero id odit quia blanditiis incidunt cum alias doloremque a asperiores aperiam. Quaerat laudantium optio saepe soluta nihil ratione odio, corrupti consequatur ullam adipisci exercitationem minus ad.</p>
       </div>
+      <button onClick={() => router.push("/employees-list")}>View Emloyees</button>
     </>
   )
 }

@@ -30,9 +30,11 @@ const Details = ({ employee }) => {
     return (
         <div>
             <h1>Employee Details</h1>
-            <h2>{employee.name}</h2>
-            <p>{employee.email}</p>
-            <p>{employee.phone}</p>
+            <div className="employee-container">
+                <h2>{employee.name}</h2>
+                <p>Email: {employee.email}</p>
+                <p>Phone: {employee.phone}</p>
+            </div>
         </div>
     );
 }

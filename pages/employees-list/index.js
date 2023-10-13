@@ -14,26 +14,26 @@ export const getStaticProps = async () => {
     }
 }
 
-const Clubs = ({ employees }) => {
+const Employees = ({ employees }) => {
     return ( 
         <>
             <Head>
                 <title>Epl Clubs - List</title>
             </Head>
             <div>
-                <h1>Epl Clubs</h1>
-                <ul>
+                <h1>Employees List</h1>
+                <div className={style.container}>
                     {employees.map(employee => {
                         return (
-                            <div key={employee.id} className={style.list}>
-                                <Link href={'/eplclubs/' + employee.id}>{employee.name}</Link>
+                            <div key={employee.id} className={style.listContainer}>
+                                <Link href={'/employees-list/' + employee.id} className={style.list}>{employee.name}</Link>
                             </div>
                         )
                     })}
-                </ul>
+                </div>
             </div>
         </>
     );
 }
  
-export default Clubs;
+export default Employees;
