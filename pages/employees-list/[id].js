@@ -32,7 +32,7 @@ const Details = ({ employee }) => {
     return (
         <>
             <Head>
-                <title>Employees List - List</title>
+                <title>Employees List - Details</title>
             </Head>
             <div className="employee-container">
                 <h2>{employee.name}</h2>
