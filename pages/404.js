@@ -14,7 +14,7 @@ const NotFound = () => {
     return (
         <>
             <Head>
-                <title>Epl Clubs - Page Not Found</title>
+                <title>Employees List - Page Not Found</title>
             </Head>
             <div>
                 <h1>Ooops.........page not found!</h1>

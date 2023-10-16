@@ -18,7 +18,7 @@ const Employees = ({ employees }) => {
     return ( 
         <>
             <Head>
-                <title>Epl Clubs - List</title>
+                <title>Employees List - List</title>
             </Head>
             <div>
                 <h1>All Employees</h1>

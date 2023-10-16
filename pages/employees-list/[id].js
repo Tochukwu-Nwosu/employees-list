@@ -1,3 +1,5 @@
+import Head from "next/head";
+
 export const getStaticPaths = async () => {
 
     const res = await fetch('https://jsonplaceholder.typicode.com/users')
@@ -28,13 +30,16 @@ export const getStaticProps = async (context) => {
 
 const Details = ({ employee }) => {
     return (
-        <div>
+        <>
+            <Head>
+                <title>Employees List - List</title>
+            </Head>
             <div className="employee-container">
                 <h2>{employee.name}</h2>
                 <p>Email: {employee.email}</p>
                 <p>Phone: {employee.phone}</p>
             </div>
-        </div>
+        </>
     );
 }
  

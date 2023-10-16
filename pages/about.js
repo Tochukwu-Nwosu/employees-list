@@ -4,7 +4,7 @@ const About = () => {
   return (
     <>
         <Head>
-            <title>Epl Clubs - About</title>
+            <title>Employees List - About</title>
         </Head>
         <div>
             <h1>About</h1>
