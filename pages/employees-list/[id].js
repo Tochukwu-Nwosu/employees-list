@@ -29,7 +29,6 @@ export const getStaticProps = async (context) => {
 const Details = ({ employee }) => {
     return (
         <div>
-            <h1>Employee Details</h1>
             <div className="employee-container">
                 <h2>{employee.name}</h2>
                 <p>Email: {employee.email}</p>

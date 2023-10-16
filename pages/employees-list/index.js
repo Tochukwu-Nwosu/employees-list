@@ -21,7 +21,7 @@ const Employees = ({ employees }) => {
                 <title>Epl Clubs - List</title>
             </Head>
             <div>
-                <h1>Employees List</h1>
+                <h1>All Employees</h1>
                 <div className={style.container}>
                     {employees.map(employee => {
                         return (
